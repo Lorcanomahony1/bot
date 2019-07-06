@@ -1,0 +1,32 @@
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup as soup
+import time
+
+
+pages = (1,2,3) 
+
+for page in pages:
+	url = 'https://www.adverts.ie/jobs/3/county-Galway/page-{}'.format(page)
+
+	req = Request(url , headers={'User-Agent': 'Mozilla/5.0'})
+
+	webpage = urlopen(req).read()
+	page_soup = soup(webpage, "html.parser")
+
+
+	links = page_soup.findAll("a", {"class": "main-image"})
+
+	list_of_links = []
+
+	for link in links:
+	    
+	    list_of_links.append("https://www.adverts.ie" + link['href'])
+
+	print(list_of_links)
+
+	
+
+	   
+
+
+	time.sleep(20)

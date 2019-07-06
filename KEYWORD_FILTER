@@ -1,0 +1,23 @@
+
+
+
+
+
+Filtered_List = []
+
+ListOfLinks = ["hotdog", "shotdog", "bigdoi", "mondo"]
+
+substring = "dog"
+
+
+
+for link in ListOfLinks:
+
+	if substring in link:  
+
+		Filtered_List.append(link)
+
+
+
+
+print(Filtered_List)

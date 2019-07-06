@@ -1,0 +1,36 @@
+
+import time
+from selenium import webdriver
+
+
+
+list_of_links = []
+
+
+keys = {
+	"name": "zzzzzzzzzzzzzzzzz",
+	"email": "23tf23ft24t432gq24t@gmail.com",
+	"password": "awoigeoaigbwo9p3[8h9[8N9BWGGDSOPIB",
+	"cover_letter": "12345"
+}
+
+	
+def applyFunction():
+
+	driver = webdriver.Chrome('./chromedriver')
+
+	for url in link_list:
+		driver.get(url)
+
+		driver.find_element_by_xpath('//*[@id="name"]').click()
+		driver.find_element_by_xpath('//*[@id="name"]').send_keys(keys["name"])
+		driver.find_element_by_xpath('//*[@id="email"]').click()
+		driver.find_element_by_xpath('//*[@id="email"]').send_keys(keys["email"])
+		driver.find_element_by_xpath('//*[@id="message"]').click()
+		driver.find_element_by_xpath('//*[@id="message"]').send_keys(keys["cover_letter"])
+		driver.find_element_by_xpath('//*[@id="cv"]').send_keys("C:/Users/Me/Desktop/PYTHON BOT/cv.docx")
+		driver.find_element_by_xpath('//*[@id="question-form"]/fieldset/div/div[5]/input').click()
+
+
+applyFunction()
+
