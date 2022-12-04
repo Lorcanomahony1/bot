@@ -5,7 +5,7 @@
 
 Filtered_List = []
 
-ListOfLinks = ["hotdog", "shotdog", "bigdoi", "mondo"]
+ListOfLinks = ["hotdog", "234", "gegrege", "mondr"]
 
 substring = "dog"
 
