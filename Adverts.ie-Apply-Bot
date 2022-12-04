@@ -43,10 +43,10 @@ link_urls = Scrape_function()
 
 
 keys = {
-	"name": "zzzzzzzzdszzzzzzzzz",
-	"email": "23tf23ft24tsddsd432gq24t@gmail.com",
-	"password": "awoigeoaigbdddddwo9p3[8h9[8N9BWGGDSOPIB",
-	"cover_letter": "12345"
+	"name": "",
+	"email": "",
+	"password": "",
+	"cover_letter": ""
 }
 
 	
